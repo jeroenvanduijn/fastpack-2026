@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure 2026 — De Keuze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <svg class="mountain-silhouette" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path
+                d="M0,300 L0,200 L120,120 L200,160 L320,60 L420,130 L520,40 L620,110 L720,20 L820,100 L920,50 L1020,120 L1100,80 L1200,140 L1320,70 L1440,150 L1440,300 Z"
+                fill="#c9a84c" />
+            <path
+                d="M0,300 L0,220 L80,180 L160,210 L260,150 L340,190 L440,130 L520,170 L600,110 L700,155 L800,100 L900,145 L1000,90 L1100,135 L1200,100 L1300,140 L1440,110 L1440,300 Z"
+                fill="#2d2a25" />
+        </svg>
+        <div class="hero-eyebrow">Adventure 2026 · De Keuze</div>
+        <h1 class="hero-title">De <span class="italic">Bergen</span><br>Roepen</h1>
+        <p class="hero-subtitle">Zwitserland · Italië · 4 Opties · 1 Beslissing</p>
+        <div class="hero-meta">
+            <div class="hero-stat"><span class="hero-stat-num">6</span><span class="hero-stat-label">Vrienden</span>
+            </div>
+            <div class="hero-stat"><span class="hero-stat-num">5</span><span class="hero-stat-label">Dagen
+                    Avontuur</span></div>
+            <div class="hero-stat"><span class="hero-stat-num">4</span><span class="hero-stat-label">Opties</span></div>
+            <div class="hero-stat"><span class="hero-stat-num">∞</span><span
+                    class="hero-stat-label">Herinneringen</span></div>
+        </div>
+        <div class="scroll-hint"><span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="corsica" style="padding: 100px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+        <div class="section" style="padding: 0 40px;">
+            <div class="reveal">
+                <div class="section-label">Vorige Editie</div>
+                <h2 class="section-title">Corsica — <em>de basis</em></h2>
+                <p class="section-body">Vorig jaar zetten we de lat. De Corsicaanse bergen, de hitte, de camaraderie —
+                    het recept voor wat een jaarlijkse traditie geworden is. Dit jaar gaan we hoger, verder, scherper.
+                </p>
+            </div>
+            <div class="divider reveal"></div>
+            <div class="content-grid reveal">
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto Corsica<br>Voeg hier toe</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto Corsica<br>Voeg hier toe</div>
+                </div>
+            </div>
+            <div class="fuli-banner reveal">
+                <div class="fuli-icon">⚡</div>
+                <div class="fuli-text"><strong>Vertical Fuli — de constante</strong><br>Afgesproken in Corsica: de
+                    Vertical Fuli doen we sowieso. Bij opties 1, 2 en 3 is dit <strong>dag 0 of dag 1</strong> — een
+                    losstaande race-dag die los staat van de tour. 4 opties, maar die ene race is het vertrekpunt.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logistics-section">
+        <div class="logistics-inner">
+            <div class="reveal">
+                <div class="section-label">Tijdvenster</div>
+                <h2 class="section-title" style="font-size:clamp(32px,4vw,52px);margin-bottom:16px;">Dinsdagavond —
+                    <em>Zondagmiddag</em></h2>
+                <p style="color:var(--cream-dark);font-size:15px;max-width:560px;line-height:1.7;">5 volle run-dagen.
+                    Maandagavond als optionele extra buffer als de groep dat wil.</p>
+            </div>
+            <div class="days-grid reveal">
+                <div class="day-block optional">
+                    <div class="day-name">Ma</div>
+                    <div class="day-type">Optioneel vertrek</div>
+                    <div class="day-detail">Extra buffer voor lange reizen of acclimatisatie</div>
+                </div>
+                <div class="day-block travel">
+                    <div class="day-name">Di</div>
+                    <div class="day-type">Reisdag</div>
+                    <div class="day-detail">Avond vertrek. Aankomst basecamp / hotel</div>
+                </div>
+                <div class="day-block run">
+                    <div class="day-name">Wo</div>
+                    <div class="day-type">Dag 1 · Run</div>
+                    <div class="day-detail">Vertical Fuli of start tour — afhankelijk van optie</div>
+                </div>
+                <div class="day-block run">
+                    <div class="day-name">Do</div>
+                    <div class="day-type">Dag 2 · Run</div>
+                    <div class="day-detail">Etappe 2 van de gekozen tour</div>
+                </div>
+                <div class="day-block run">
+                    <div class="day-name">Vr</div>
+                    <div class="day-type">Dag 3 · Run</div>
+                    <div class="day-detail">Etappe 3 — hartje tour</div>
+                </div>
+                <div class="day-block run">
+                    <div class="day-name">Za</div>
+                    <div class="day-type">Dag 4 · Run</div>
+                    <div class="day-detail">Etappe 4 — finish / slotdag</div>
+                </div>
+                <div class="day-block travel">
+                    <div class="day-name">Zo</div>
+                    <div class="day-type">Terugreis</div>
+                    <div class="day-detail">Ochtend afronden, middag vertrek richting huis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="options-nav">
+        <div class="options-nav-inner">
+            <div class="nav-logo">De 4 Opties</div>
+            <a href="#opt1" class="nav-option active">01 · Fuli + Muverans</a>
+            <a href="#opt2" class="nav-option">02 · Fuli + TMB</a>
+            <a href="#opt3" class="nav-option">03 · Monte Rosa</a>
+            <a href="#opt4" class="nav-option">04 · Alta Via 1</a>
+            <a href="#compare" class="nav-option">Vergelijk</a>
+        </div>
+    </nav>
+
+    <section id="opt1" class="option-section">
+        <div class="option-inner">
+            <div class="option-number">01</div>
+            <div class="reveal">
+                <div class="option-tag">Optie 01 · Wallis · Zwitserland</div>
+                <h2 class="option-title">Vertical Fuli +<br>Tour des Muverans</h2>
+                <p class="option-subtitle">Compacte variant · 3 run-dagen na de Fuli · Wallis thuis-gevoel</p>
+                <div class="option-badges">
+                    <span class="badge highlight">✓ Vertical Fuli incl.</span><span class="badge">Wallis</span><span
+                        class="badge">3–4 dagen tour</span><span class="badge">Korter dan 10</span>
+                </div>
+            </div>
+            <div class="stats-row reveal">
+                <div class="stat"><span class="stat-val">~75</span><span class="stat-label">km tour</span></div>
+                <div class="stat"><span class="stat-val">~5.200</span><span class="stat-label">hm ↑ tour</span></div>
+                <div class="stat"><span class="stat-val">3</span><span class="stat-label">tour-dagen</span></div>
+                <div class="stat"><span class="stat-val">4</span><span class="stat-label">run-dagen totaal</span></div>
+            </div>
+            <div class="reveal">
+                <div class="video-slot">
+                    <div class="video-placeholder">
+                        <div class="play-icon">▶</div>
+                        <div class="video-label">Relive 3D · Tour des Muverans<br>Voeg embed link toe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="elevation-slot">
+                    <div class="elevation-label-top">Hoogteprofiel</div>
+                    <div class="elevation-demo" id="elev1"></div>
+                    <div class="elevation-placeholder">Voeg GPX hoogteprofiel screenshot toe</div>
+                </div>
+            </div>
+            <div class="reveal">
+                <ul class="etappe-list">
+                    <li class="etappe-item"><span class="etappe-day">Wo</span><span class="etappe-name">Vertical Fuli
+                            Race</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Do</span><span class="etappe-name">Muverans Etappe
+                            1 — [Start → Hut]</span><span class="etappe-km">? km</span><span class="etappe-hm">?
+                            hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Vr</span><span class="etappe-name">Muverans Etappe
+                            2 — [Hut → Hut]</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span>
+                    </li>
+                    <li class="etappe-item"><span class="etappe-day">Za</span><span class="etappe-name">Muverans Etappe
+                            3 — [Hut → Finish]</span><span class="etappe-km">? km</span><span class="etappe-hm">?
+                            hm</span></li>
+                </ul>
+            </div>
+            <div class="photo-grid reveal">
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">🏔️</div>
+                    <div class="photo-placeholder-text">Grote foto Muverans</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto 2</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto 3</div>
+                </div>
+            </div>
+            <div class="fuli-banner reveal" style="border-color:rgba(74,103,65,0.3);">
+                <div class="fuli-icon">💬</div>
+                <div class="fuli-text"><strong>Pro:</strong> Compacte regio, alles dicht bij elkaar, Fuli + mooie tour
+                    in één trip. <strong>Con:</strong> Iets korter dan de gewenste 10km+ per etappe — check
+                    etappe-lengtes.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opt2" class="option-section">
+        <div class="option-inner">
+            <div class="option-number">02</div>
+            <div class="reveal">
+                <div class="option-tag">Optie 02 · Chamonix · Frankrijk / Italië / Zwitserland</div>
+                <h2 class="option-title">Vertical Fuli +<br>Tour du Mont Blanc</h2>
+                <p class="option-subtitle">Etappes 4–7 · 96,1 km · Het hart van de iconische TMB</p>
+                <div class="option-badges">
+                    <span class="badge highlight">✓ Vertical Fuli incl.</span><span class="badge">TMB</span><span
+                        class="badge">96,1 km</span><span class="badge">4 etappes</span><span
+                        class="badge highlight">Iconisch</span>
+                </div>
+            </div>
+            <div class="stats-row reveal">
+                <div class="stat"><span class="stat-val">96,1</span><span class="stat-label">km tour</span></div>
+                <div class="stat"><span class="stat-val">4.800</span><span class="stat-label">hm ↑</span></div>
+                <div class="stat"><span class="stat-val">4</span><span class="stat-label">tour-etappes</span></div>
+                <div class="stat"><span class="stat-val">5</span><span class="stat-label">run-dagen totaal</span></div>
+            </div>
+            <div class="reveal">
+                <div class="video-slot">
+                    <div class="video-placeholder">
+                        <div class="play-icon">▶</div>
+                        <div class="video-label">Relive 3D · Tour du Mont Blanc<br>Voeg embed link toe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="elevation-slot">
+                    <div class="elevation-label-top">Hoogteprofiel · 96,1 km</div>
+                    <div class="elevation-demo" id="elev2"></div>
+                    <div class="elevation-placeholder">Voeg GPX hoogteprofiel screenshot toe</div>
+                </div>
+            </div>
+            <div class="reveal">
+                <ul class="etappe-list">
+                    <li class="etappe-item"><span class="etappe-day">Di</span><span class="etappe-name">Reis naar
+                            Chamonix / Courmayeur</span><span class="etappe-km">—</span><span class="etappe-hm">—</span>
+                    </li>
+                    <li class="etappe-item"><span class="etappe-day">Wo</span><span class="etappe-name">Vertical Fuli
+                            Race</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Do</span><span class="etappe-name">Etappe 4 —
+                            Refuge Giorgio Bertone → Gîte alpage de la Peule</span><span class="etappe-km">21,1
+                            km</span><span class="etappe-hm">1.070 hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Vr</span><span class="etappe-name">Etappe 5 — Gîte
+                            alpage de la Peule → Champex-Lac</span><span class="etappe-km">22,2 km</span><span
+                            class="etappe-hm">520 hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Za</span><span class="etappe-name">Etappe 6 —
+                            Champex-Lac → Tré-le-Champ</span><span class="etappe-km">28,5 km</span><span
+                            class="etappe-hm">1.780 hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Zo</span><span class="etappe-name">Etappe 7 —
+                            Tré-le-Champ → Les Houches</span><span class="etappe-km">24,3 km</span><span
+                            class="etappe-hm">1.430 hm</span></li>
+                </ul>
+            </div>
+            <div class="photo-grid reveal">
+                <div class="photo-slot"
+                    style="background-image:url('https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?auto=format&fit=crop&q=80&w=800'); background-size:cover; background-position:center;">
+                </div>
+                <div class="photo-slot"
+                    style="background-image:url('https://images.unsplash.com/photo-1531776991316-2917e7ee8e3f?auto=format&fit=crop&q=80&w=800'); background-size:cover; background-position:center;">
+                </div>
+                <div class="photo-slot"
+                    style="background-image:url('https://images.unsplash.com/photo-1627932625298-8be4c9a8bb6d?auto=format&fit=crop&q=80&w=800'); background-size:cover; background-position:center;">
+                </div>
+            </div>
+            <div class="fuli-banner reveal" style="border-color:rgba(74,103,65,0.3);">
+                <div class="fuli-icon">💬</div>
+                <div class="fuli-text"><strong>Pro:</strong> De TMB is legendarisch. Drie landen in één tour,
+                    ongelooflijke variatie. 96km over 4 etappes = gemiddeld 24km/dag — perfect. <strong>Con:</strong>
+                    Logistiek iets complexer: Fuli-locatie naar TMB-start. Populaire route = volle huts. Boek vroeg.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opt3" class="option-section">
+        <div class="option-inner">
+            <div class="option-number">03</div>
+            <div class="reveal">
+                <div class="option-tag">Optie 03 · Zermatt → Saas-Fee · Zwitserland</div>
+                <h2 class="option-title">Tour de<br>Monte Rosa</h2>
+                <p class="option-subtitle">Etappes 1, 2, 6–10 · Zermatt start · Saas-Fee finish · Trein terug</p>
+                <div class="option-badges">
+                    <span class="badge">Zonder Fuli</span><span class="badge">Zermatt → Saas-Fee</span><span
+                        class="badge">7 etappes</span><span class="badge highlight">Hoogalpien</span><span
+                        class="badge">Matterhorn Views</span>
+                </div>
+            </div>
+            <div class="stats-row reveal">
+                <div class="stat"><span class="stat-val">~120</span><span class="stat-label">km totaal</span></div>
+                <div class="stat"><span class="stat-val">~9.000</span><span class="stat-label">hm ↑</span></div>
+                <div class="stat"><span class="stat-val">7</span><span class="stat-label">etappes</span></div>
+                <div class="stat"><span class="stat-val">4600m+</span><span class="stat-label">hoogste punt</span></div>
+            </div>
+            <div class="reveal">
+                <div class="video-slot">
+                    <div class="video-placeholder">
+                        <div class="play-icon">▶</div>
+                        <div class="video-label">Relive 3D · Tour de Monte Rosa<br>Voeg embed link toe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="elevation-slot">
+                    <div class="elevation-label-top">Hoogteprofiel · Etappes 1,2,6–10</div>
+                    <div class="elevation-demo" id="elev3"></div>
+                    <div class="elevation-placeholder">Voeg GPX hoogteprofiel screenshot toe</div>
+                </div>
+            </div>
+            <div class="reveal">
+                <ul class="etappe-list">
+                    <li class="etappe-item"><span class="etappe-day">Di</span><span class="etappe-name">Trein naar
+                            Zermatt</span><span class="etappe-km">—</span><span class="etappe-hm">—</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Wo</span><span class="etappe-name">Etappe 1 —
+                            Zermatt → [Hut]</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span>
+                    </li>
+                    <li class="etappe-item"><span class="etappe-day">Do</span><span class="etappe-name">Etappe 2 — [Hut
+                            → Hut]</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Vr</span><span class="etappe-name">Etappes 6 + 7 —
+                            traverse</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Za</span><span class="etappe-name">Etappes 8, 9, 10
+                            → Saas-Fee</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Zo</span><span class="etappe-name">Trein Saas-Fee →
+                            Zermatt → thuis</span><span class="etappe-km">—</span><span class="etappe-hm">—</span></li>
+                </ul>
+            </div>
+            <div class="photo-grid reveal">
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">🗻</div>
+                    <div class="photo-placeholder-text">Matterhorn · Monte Rosa</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto 2</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto 3</div>
+                </div>
+            </div>
+            <div class="fuli-banner reveal" style="border-color:rgba(168,197,204,0.3);">
+                <div class="fuli-icon">💬</div>
+                <div class="fuli-text"><strong>Pro:</strong> Matterhorn, glaciërs, Saas-Fee als epische finish.
+                    Punt-naar-punt met trein terug = avontuurlijk logistiek. Hoog en wild terrein. <strong>Con:</strong>
+                    Geen Vertical Fuli. Kan gecombineerd worden? Check afstand Fuli → Zermatt.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opt4" class="option-section">
+        <div class="option-inner">
+            <div class="option-number">04</div>
+            <div class="reveal">
+                <div class="option-tag">Optie 04 · Dolomieten · Italië</div>
+                <h2 class="option-title">Alta Via 1<br><em>Dolomieten</em></h2>
+                <p class="option-subtitle">Braies → Belluno · Zonder Vertical Fuli · Totaal andere sfeer</p>
+                <div class="option-badges">
+                    <span class="badge">Zonder Fuli</span><span class="badge">Dolomieten</span><span
+                        class="badge highlight">UNESCO Werelderfgoed</span><span class="badge">Italië</span><span
+                        class="badge">Rifugio-cultuur</span>
+                </div>
+            </div>
+            <div class="stats-row reveal">
+                <div class="stat"><span class="stat-val">~150</span><span class="stat-label">km totaal</span></div>
+                <div class="stat"><span class="stat-val">~9.600</span><span class="stat-label">hm ↑</span></div>
+                <div class="stat"><span class="stat-val">10</span><span class="stat-label">etappes (select)</span></div>
+                <div class="stat"><span class="stat-val">Rifugio</span><span class="stat-label">overnachtingen</span>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="video-slot">
+                    <div class="video-placeholder">
+                        <div class="play-icon">▶</div>
+                        <div class="video-label">Relive 3D · Alta Via 1<br>Voeg embed link toe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="elevation-slot">
+                    <div class="elevation-label-top">Hoogteprofiel · Alta Via 1</div>
+                    <div class="elevation-demo" id="elev4"></div>
+                    <div class="elevation-placeholder">Voeg GPX hoogteprofiel screenshot toe</div>
+                </div>
+            </div>
+            <div class="reveal">
+                <ul class="etappe-list">
+                    <li class="etappe-item"><span class="etappe-day">Di</span><span class="etappe-name">Reis naar Lago
+                            di Braies / Cortina</span><span class="etappe-km">—</span><span class="etappe-hm">—</span>
+                    </li>
+                    <li class="etappe-item"><span class="etappe-day">Wo</span><span class="etappe-name">AV1 Etappe 1 —
+                            Braies → Rifugio Biella</span><span class="etappe-km">? km</span><span class="etappe-hm">?
+                            hm</span></li>
+                    <li class="etappe-item"><span class="etappe-day">Do</span><span class="etappe-name">AV1 Etappe 2–3 —
+                            Naar Cortina</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span>
+                    </li>
+                    <li class="etappe-item"><span class="etappe-day">Vr</span><span class="etappe-name">AV1 Etappe 4–6 —
+                            Passo/traverse</span><span class="etappe-km">? km</span><span class="etappe-hm">? hm</span>
+                    </li>
+                    <li class="etappe-item"><span class="etappe-day">Za</span><span class="etappe-name">AV1 Etappe 7–10
+                            — Finale richting Belluno</span><span class="etappe-km">? km</span><span class="etappe-hm">?
+                            hm</span></li>
+                </ul>
+            </div>
+            <div class="photo-grid reveal">
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">🧗</div>
+                    <div class="photo-placeholder-text">Dolomieten · Alta Via</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto 2</div>
+                </div>
+                <div class="photo-slot">
+                    <div class="photo-placeholder-icon">📸</div>
+                    <div class="photo-placeholder-text">Foto 3</div>
+                </div>
+            </div>
+            <div class="fuli-banner reveal" style="border-color:rgba(184,92,56,0.3);">
+                <div class="fuli-icon">💬</div>
+                <div class="fuli-text"><strong>Pro:</strong> Dolomieten zijn absurd mooi — kalksteentorens, dramatisch
+                    landschap. Rifugio-cultuur (pasta + wijn na elke etappe). Totaal andere vibe dan Zwitserland.
+                    <strong>Con:</strong> Geen Vertical Fuli. Langere rit vanuit NL. Kan druk zijn in hoogseizoen.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="compare" class="comparison-section">
+        <div class="comparison-inner">
+            <div class="reveal">
+                <div class="section-label">Side by side</div>
+                <h2 class="section-title" style="font-size:clamp(32px,4vw,52px);margin-bottom:8px;">De
+                    <em>Vergelijking</em></h2>
+            </div>
+            <div class="reveal" style="overflow-x:auto;">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Vertical Fuli</th>
+                            <th>Km tour</th>
+                            <th>Hm ↑</th>
+                            <th>Dagen run</th>
+                            <th>Land</th>
+                            <th>Logistiek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01 · Fuli + Muverans</td>
+                            <td><span class="check">✓</span></td>
+                            <td>~75 km</td>
+                            <td>~5.200</td>
+                            <td>4 totaal</td>
+                            <td>🇨🇭 CH</td>
+                            <td>Compact · eenvoudig</td>
+                        </tr>
+                        <tr>
+                            <td>02 · Fuli + TMB</td>
+                            <td><span class="check">✓</span></td>
+                            <td>96,1 km</td>
+                            <td>4.800</td>
+                            <td>5 totaal</td>
+                            <td>🇫🇷🇮🇹🇨🇭</td>
+                            <td>Transfer Fuli → TMB</td>
+                        </tr>
+                        <tr>
+                            <td>03 · Monte Rosa</td>
+                            <td><span class="cross">—</span></td>
+                            <td>~120 km</td>
+                            <td>~9.000</td>
+                            <td>4 run</td>
+                            <td>🇨🇭 CH</td>
+                            <td>Trein terug</td>
+                        </tr>
+                        <tr>
+                            <td>04 · Alta Via 1</td>
+                            <td><span class="cross">—</span></td>
+                            <td>~150 km</td>
+                            <td>~9.600</td>
+                            <td>4–5 run</td>
+                            <td>🇮🇹 IT</td>
+                            <td>Langere rit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section style="border-top: 1px solid rgba(255,255,255,0.06);">
+        <div class="vote-section reveal">
+            <div class="section-label" style="justify-content:center;">Jouw stem</div>
+            <h2
+                style="font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:700;margin-bottom:16px;">
+                Wat wordt <em>het?</em></h2>
+            <p style="color:var(--cream-dark);font-size:15px;line-height:1.7;">Stem voor je favoriet. We beslissen
+                vanavond.</p>
+            <div class="vote-options">
+                <button class="vote-btn" onclick="vote(1)"><span class="vote-num">01</span>Fuli + Muverans</button>
+                <button class="vote-btn" onclick="vote(2)"><span class="vote-num">02</span>Fuli + Mont Blanc</button>
+                <button class="vote-btn" onclick="vote(3)"><span class="vote-num">03</span>Monte Rosa</button>
+                <button class="vote-btn" onclick="vote(4)"><span class="vote-num">04</span>Alta Via 1</button>
+            </div>
+            <p id="vote-result"
+                style="margin-top:32px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.2em;color:var(--gold);min-height:24px;">
+            </p>
+        </div>
+    </section>
+
+    <footer style="text-align:center;padding:60px 40px;border-top:1px solid rgba(255,255,255,0.06);">
+        <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--stone-light);">De
+            bergen wachten niet.</p>
+        <p
+            style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--stone-light);margin-top:16px;opacity:0.5;">
+            Adventure 2026 · Voorbereiding door Jeroen</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
