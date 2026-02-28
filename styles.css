@@ -615,6 +615,61 @@ body {
   z-index: 1;
 }
 
+/* Day-bar elevation profiles */
+.elevation-day-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding-top: 40px;
+  min-height: 160px;
+}
+
+.day-bar-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.day-bar-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-transform: uppercase;
+  order: -1;
+}
+
+.day-bar {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 4px 4px 0 0;
+  min-height: 20px;
+  transition: opacity 0.3s ease;
+  cursor: help;
+}
+
+.day-bar:hover {
+  opacity: 0.8;
+}
+
+.day-bar-km {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--cream-dark);
+  white-space: nowrap;
+}
+
+.day-bar-hm {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--green-alpine);
+  white-space: nowrap;
+}
+
 /* Etappe list */
 .etappe-list {
   list-style: none;
