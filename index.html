@@ -246,40 +246,7 @@
                 <div class="reveal">
                     <div class="elevation-slot">
                         <div class="elevation-label-top">Hoogteprofiel · ~56 km · 4 dagen</div>
-                        <div class="elevation-day-bars">
-                            <div class="day-bar-group">
-                                <div class="day-bar-label">Wo</div>
-                                <div class="day-bar"
-                                    style="height:60px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                    title="Fuli: 1.000 hm ↑"></div>
-                                <div class="day-bar-km">1,9km</div>
-                                <div class="day-bar-hm">1.000hm</div>
-                            </div>
-                            <div class="day-bar-group">
-                                <div class="day-bar-label">Do</div>
-                                <div class="day-bar"
-                                    style="height:84px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                    title="Dag 1: 1.400 hm ↑"></div>
-                                <div class="day-bar-km">~14km</div>
-                                <div class="day-bar-hm">1.400hm</div>
-                            </div>
-                            <div class="day-bar-group">
-                                <div class="day-bar-label">Vr</div>
-                                <div class="day-bar"
-                                    style="height:90px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                    title="Dag 2: 1.500 hm ↑"></div>
-                                <div class="day-bar-km">~22km</div>
-                                <div class="day-bar-hm">1.500hm</div>
-                            </div>
-                            <div class="day-bar-group">
-                                <div class="day-bar-label">Za</div>
-                                <div class="day-bar"
-                                    style="height:84px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                    title="Dag 3: 1.400 hm ↑"></div>
-                                <div class="day-bar-km">~20km</div>
-                                <div class="day-bar-hm">1.400hm</div>
-                            </div>
-                        </div>
+                        <div class="elevation-line-profile" id="elev-muverans"></div>
                     </div>
                 </div>
                 <div class="reveal">
@@ -455,48 +422,7 @@
             <div class="reveal">
                 <div class="elevation-slot">
                     <div class="elevation-label-top">Hoogteprofiel · 96,1 km · 5 dagen</div>
-                    <div class="elevation-day-bars">
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Wo</div>
-                            <div class="day-bar"
-                                style="height:60px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Fuli: 1.000 hm"></div>
-                            <div class="day-bar-km">1,9km</div>
-                            <div class="day-bar-hm">1.000hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Do</div>
-                            <div class="day-bar"
-                                style="height:64px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Et.4: 1.070 hm"></div>
-                            <div class="day-bar-km">21,1km</div>
-                            <div class="day-bar-hm">1.070hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Vr</div>
-                            <div class="day-bar"
-                                style="height:31px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Et.5: 520 hm"></div>
-                            <div class="day-bar-km">22,2km</div>
-                            <div class="day-bar-hm">520hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Za</div>
-                            <div class="day-bar"
-                                style="height:107px; background: linear-gradient(to top, #e74c3c, rgba(231,76,60,0.3));"
-                                title="Et.6: 1.780 hm ⚠️"></div>
-                            <div class="day-bar-km">28,5km</div>
-                            <div class="day-bar-hm">1.780hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Zo</div>
-                            <div class="day-bar"
-                                style="height:86px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Et.7: 1.430 hm"></div>
-                            <div class="day-bar-km">24,3km</div>
-                            <div class="day-bar-hm">1.430hm</div>
-                        </div>
-                    </div>
+                    <div class="elevation-line-profile" id="elev-tmb"></div>
                 </div>
             </div>
             <div class="reveal">
@@ -514,12 +440,15 @@
                     <li class="etappe-item" style="border-left: 3px solid var(--gold); padding-left: 12px;"><span
                             class="etappe-day">Do</span><span class="etappe-name">Etappe 4 — <a
                                 href="https://www.rifugiobertone.it" target="_blank" style="color:var(--ice)">Ref.
-                                Bertone</a> → <a href="https://www.montourdumontblanc.com/en/accommodation/6/gite-alpage-de-la-peule" target="_blank"
-                                style="color:var(--ice)">Gîte de la Peule</a></span><span class="etappe-km">21,1
+                                Bertone</a> → <a
+                                href="https://www.montourdumontblanc.com/en/accommodation/6/gite-alpage-de-la-peule"
+                                target="_blank" style="color:var(--ice)">Gîte de la Peule</a></span><span
+                            class="etappe-km">21,1
                             km</span><span class="etappe-hm">1.070 hm</span></li>
                     <li class="etappe-item" style="font-size:12px; opacity:0.7; padding-left:40px;"><span
                             class="etappe-day">🛏️</span><span class="etappe-name">Overnachting: <a
-                                href="https://www.montourdumontblanc.com/en/accommodation/6/gite-alpage-de-la-peule" target="_blank" style="color:var(--ice)">Gîte Alpage
+                                href="https://www.montourdumontblanc.com/en/accommodation/6/gite-alpage-de-la-peule"
+                                target="_blank" style="color:var(--ice)">Gîte Alpage
                                 de la Peule</a> (2.071m)</span><span class="etappe-km"></span><span
                             class="etappe-hm"></span></li>
                     <li class="etappe-item" style="border-left: 3px solid var(--gold); padding-left: 12px;"><span
@@ -538,9 +467,9 @@
                             hm</span></li>
                     <li class="etappe-item" style="font-size:12px; opacity:0.7; padding-left:40px;"><span
                             class="etappe-day">🛏️</span><span class="etappe-name">Overnachting: <a
-                                href="https://www.la-boerne.fr" target="_blank"
-                                style="color:var(--ice)">Auberge de la Boerne</a>, Tré-le-Champ</span><span
-                            class="etappe-km"></span><span class="etappe-hm"></span></li>
+                                href="https://www.la-boerne.fr" target="_blank" style="color:var(--ice)">Auberge de la
+                                Boerne</a>, Tré-le-Champ</span><span class="etappe-km"></span><span
+                            class="etappe-hm"></span></li>
                     <li class="etappe-item" style="border-left: 3px solid var(--gold); padding-left: 12px;"><span
                             class="etappe-day">Zo</span><span class="etappe-name">Etappe 7 — Tré-le-Champ → Les
                             Houches</span><span class="etappe-km">24,3 km</span><span class="etappe-hm">1.430 hm</span>
@@ -577,7 +506,8 @@
                             <div class="hut-name">Gîte Alpage de la Peule</div>
                             <div class="hut-detail">2.071m · Etappe 4 overnachting · Val Ferret, CH</div>
                         </div>
-                        <a href="https://www.montourdumontblanc.com/en/accommodation/6/gite-alpage-de-la-peule" target="_blank" class="hut-link">WEBSITE →</a>
+                        <a href="https://www.montourdumontblanc.com/en/accommodation/6/gite-alpage-de-la-peule"
+                            target="_blank" class="hut-link">WEBSITE →</a>
                     </li>
                     <li class="hut-item">
                         <span class="hut-icon">�</span>
@@ -690,48 +620,7 @@
             <div class="reveal">
                 <div class="elevation-slot">
                     <div class="elevation-label-top">Hoogteprofiel · 106,8 km · 5 dagen</div>
-                    <div class="elevation-day-bars">
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Wo</div>
-                            <div class="day-bar"
-                                style="height:60px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Fuli: 1.000 hm"></div>
-                            <div class="day-bar-km">1,9km</div>
-                            <div class="day-bar-hm">1.000hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Do</div>
-                            <div class="day-bar"
-                                style="height:103px; background: linear-gradient(to top, #e74c3c, rgba(231,76,60,0.3));"
-                                title="Et.6: 1.710 hm"></div>
-                            <div class="day-bar-km">12,8km</div>
-                            <div class="day-bar-hm">1.710hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Vr</div>
-                            <div class="day-bar"
-                                style="height:89px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Et.7+8: 1.490 hm"></div>
-                            <div class="day-bar-km">31,5km</div>
-                            <div class="day-bar-hm">1.490hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Za</div>
-                            <div class="day-bar"
-                                style="height:125px; background: linear-gradient(to top, #e74c3c, rgba(231,76,60,0.3));"
-                                title="Et.9+10: 2.080 hm 🔥"></div>
-                            <div class="day-bar-km">38,6km</div>
-                            <div class="day-bar-hm">2.080hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Zo</div>
-                            <div class="day-bar"
-                                style="height:102px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Et.1+2: 1.700 hm"></div>
-                            <div class="day-bar-km">23,8km</div>
-                            <div class="day-bar-hm">1.700hm</div>
-                        </div>
-                    </div>
+                    <div class="elevation-line-profile" id="elev-monterosa"></div>
                 </div>
             </div>
             <div class="reveal">
@@ -748,12 +637,14 @@
                             Zermatt</span><span class="etappe-km"></span><span class="etappe-hm"></span></li>
                     <li class="etappe-item" style="border-left: 3px solid var(--gold); padding-left: 12px;"><span
                             class="etappe-day">Do</span><span class="etappe-name">Et. 6 — Zermatt → <a
-                                href="https://www.lovevda.it/en/database/8/mountain-huts/cervino-matterhorn/valtournenche/rifugio-teodulo/1741" target="_blank" style="color:var(--ice)">Rif.
+                                href="https://www.lovevda.it/en/database/8/mountain-huts/cervino-matterhorn/valtournenche/rifugio-teodulo/1741"
+                                target="_blank" style="color:var(--ice)">Rif.
                                 Teodulo</a> (3.317m)</span><span class="etappe-km">12,8 km</span><span
                             class="etappe-hm">1.710 hm</span></li>
                     <li class="etappe-item" style="font-size:12px; opacity:0.7; padding-left:40px;"><span
                             class="etappe-day">🛏️</span><span class="etappe-name">Overnachting: <a
-                                href="https://www.lovevda.it/en/database/8/mountain-huts/cervino-matterhorn/valtournenche/rifugio-teodulo/1741" target="_blank" style="color:var(--ice)">Rif.
+                                href="https://www.lovevda.it/en/database/8/mountain-huts/cervino-matterhorn/valtournenche/rifugio-teodulo/1741"
+                                target="_blank" style="color:var(--ice)">Rif.
                                 Teodulo</a> (3.317m) — hoogste punt!</span><span class="etappe-km"></span><span
                             class="etappe-hm"></span></li>
                     <li class="etappe-item" style="border-left: 3px solid var(--gold); padding-left: 12px;"><span
@@ -806,7 +697,8 @@
                             <div class="hut-name">Rifugio Teodulo (Theodulhütte)</div>
                             <div class="hut-detail">3.317m · Dag 2 overnachting (Et. 6) · Hoogste punt</div>
                         </div>
-                        <a href="https://www.lovevda.it/en/database/8/mountain-huts/cervino-matterhorn/valtournenche/rifugio-teodulo/1741" target="_blank" class="hut-link">WEBSITE →</a>
+                        <a href="https://www.lovevda.it/en/database/8/mountain-huts/cervino-matterhorn/valtournenche/rifugio-teodulo/1741"
+                            target="_blank" class="hut-link">WEBSITE →</a>
                     </li>
                     <li class="hut-item">
                         <span class="hut-icon">⛺</span>
@@ -924,41 +816,8 @@
             </div>
             <div class="reveal">
                 <div class="elevation-slot">
-                    <div class="elevation-label-top">Hoogteprofiel · 107 km · 5 dagen</div>
-                    <div class="elevation-day-bars">
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Wo</div>
-                            <div class="day-bar"
-                                style="height:125px; background: linear-gradient(to top, #e74c3c, rgba(231,76,60,0.3));"
-                                title="Dag 1+2: 2.590 hm 🔥"></div>
-                            <div class="day-bar-km">35,7km</div>
-                            <div class="day-bar-hm">2.590hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Do</div>
-                            <div class="day-bar"
-                                style="height:92px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Dag 3+4: 1.540 hm"></div>
-                            <div class="day-bar-km">25,5km</div>
-                            <div class="day-bar-hm">1.540hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Vr</div>
-                            <div class="day-bar"
-                                style="height:46px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Dag 5: 770 hm"></div>
-                            <div class="day-bar-km">15,3km</div>
-                            <div class="day-bar-hm">770hm</div>
-                        </div>
-                        <div class="day-bar-group">
-                            <div class="day-bar-label">Za</div>
-                            <div class="day-bar"
-                                style="height:79px; background: linear-gradient(to top, var(--gold), rgba(212,175,55,0.3));"
-                                title="Dag 6+7: 1.310 hm"></div>
-                            <div class="day-bar-km">30,5km</div>
-                            <div class="day-bar-hm">1.310hm</div>
-                        </div>
-                    </div>
+                    <div class="elevation-label-top">Hoogteprofiel · 107 km · 4 dagen</div>
+                    <div class="elevation-line-profile" id="elev-altavia"></div>
                 </div>
             </div>
             <div class="reveal">
@@ -1071,7 +930,8 @@
                             <div class="hut-name">Rifugio Pramperet</div>
                             <div class="hut-detail">1.857m · Dag 4 alternatief · Laatste rifugio</div>
                         </div>
-                        <a href="https://www.rifugiosommarivaalpramperet.it" target="_blank" class="hut-link">WEBSITE →</a>
+                        <a href="https://www.rifugiosommarivaalpramperet.it" target="_blank" class="hut-link">WEBSITE
+                            →</a>
                     </li>
                 </ul>
             </div>
