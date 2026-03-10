@@ -1046,6 +1046,29 @@ body {
 }
 
 /* ── ETAPPE CARDS ── */
+.day-elevation-slot {
+  background: rgba(45, 42, 37, 0.6);
+  border: 1px solid rgba(74, 103, 65, 0.3);
+  border-radius: 6px;
+  padding: 16px 20px 8px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.day-elevation-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green-alpine);
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.day-elevation-slot .elevation-line-profile {
+  height: 120px;
+}
+
 .etappe-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
   border: 1px solid rgba(255, 255, 255, 0.08);

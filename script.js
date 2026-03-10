@@ -70,18 +70,20 @@ function renderElevationProfile(containerId, elevations, daySplits, altRange) {
   container.innerHTML = svg;
 }
 
-// ── Alta Via 1: South → North
-// Dag 1: Pramperet/Vazzoler ~1800 → Tissi 2262 → Coldai 2132
-// Dag 2: Coldai 2132 → afdaling → Città di Fiume 1918
-// Dag 3: Città di Fiume 1918 → stijging → rotsformaties → afdaling Cortina → Dibona 2083
-// Dag 4: Dibona 2083 → Cinque Torri → Lagazuoi 2752 → Fanes-plateau → Lavarella 2042
-// Dag 5: Lavarella 2042 → Fanes → Pederü → Braies 1496
+// ── Alta Via 1: South → North (~100 km)
+// Dag 1: Pramperet 1857 → Vazzoler 1714 → Tissi 2262 → Coldai 2132  (23 km)
+// Dag 2: Coldai 2132 → afdaling → Città di Fiume 1918  (13 km)
+// Dag 3: Città di Fiume 1918 → rotsformaties → Cortina area → Dibona 2083  (26 km)
+// Dag 4: Dibona 2083 → Cinque Torri → Lagazuoi 2752 → Fanes → Lavarella 2042  (18 km)
+// Dag 5: Lavarella 2042 → Fanes → Pederü → Braies 1496  (20 km)
+
+// Overall profile
 renderElevationProfile('elev-altavia', [
-  // Dag 1: Start (~1800) → Tissi (2262) → Coldai (2132)
-  1800, 1900, 2050, 2200, 2262, 2200, 2132,
-  // Dag 2: Coldai (2132) → daling → Città di Fiume (1918)
-  2132, 2050, 1980, 1950, 1918,
-  // Dag 3: Città di Fiume (1918) → stijging → rotsformaties → afdaling → Dibona (2083)
+  // Dag 1: Pramperet (1857) → door dal → Vazzoler (1714) → stijging → Tissi (2262) → Coldai (2132)
+  1857, 1800, 1750, 1714, 1750, 1850, 2000, 2150, 2262, 2200, 2132,
+  // Dag 2: Coldai (2132) → geleidelijk dalen → Città di Fiume (1918)
+  2132, 2080, 2020, 1970, 1918,
+  // Dag 3: Città di Fiume (1918) → op en neer → rotsformaties → Dibona (2083)
   1918, 2000, 2150, 2300, 2400, 2300, 2100, 1900, 1800, 2000, 2083,
   // Dag 4: Dibona (2083) → Cinque Torri → Lagazuoi (2752) → afdaling → Lavarella (2042)
   2083, 2200, 2350, 2500, 2752, 2600, 2400, 2200, 2042,
@@ -89,8 +91,36 @@ renderElevationProfile('elev-altavia', [
   2042, 2060, 2000, 1900, 1750, 1600, 1496
 ], [
   { at: 0, label: 'Ma' },
-  { at: 7 / 39, label: 'Di' },
-  { at: 12 / 39, label: 'Wo' },
-  { at: 23 / 39, label: 'Do' },
-  { at: 32 / 39, label: 'Vr' }
+  { at: 11 / 42, label: 'Di' },
+  { at: 16 / 42, label: 'Wo' },
+  { at: 27 / 42, label: 'Do' },
+  { at: 36 / 42, label: 'Vr' }
 ], [1300, 2900]);
+
+// ── Per-dag elevation profiles
+
+// Dag 1: Pramperet → Vazzoler → Tissi → Coldai (23 km, 800m stijging, 300m daling)
+renderElevationProfile('elev-dag1', [
+  1857, 1830, 1800, 1770, 1740, 1714, 1730, 1780, 1850, 1920, 2000, 2080, 2150, 2220, 2262, 2240, 2200, 2170, 2132
+], [], [1600, 2400]);
+
+// Dag 2: Coldai → Città di Fiume (13 km, 300m stijging, 700m daling)
+renderElevationProfile('elev-dag2', [
+  2132, 2150, 2180, 2160, 2120, 2080, 2040, 2000, 1980, 1960, 1940, 1918
+], [], [1800, 2300]);
+
+// Dag 3: Città di Fiume → Dibona (26 km, 900m stijging, 1100m daling)
+renderElevationProfile('elev-dag3', [
+  1918, 1960, 2020, 2100, 2200, 2300, 2400, 2350, 2250, 2150, 2050, 1950, 1850, 1780, 1750, 1800, 1900, 2000, 2083
+], [], [1600, 2500]);
+
+// Dag 4: Dibona → Cinque Torri → Lagazuoi → Lavarella (18 km, 900m stijging, 700m daling)
+renderElevationProfile('elev-dag4', [
+  2083, 2120, 2180, 2250, 2350, 2450, 2550, 2650, 2752, 2700, 2600, 2500, 2400, 2300, 2200, 2100, 2042
+], [], [1900, 2900]);
+
+// Dag 5: Lavarella → Fanes → Pederü → Braies (20 km, 400m stijging, 900m daling)
+renderElevationProfile('elev-dag5', [
+  2042, 2060, 2080, 2060, 2020, 1980, 1940, 1900, 1850, 1800, 1750, 1700, 1650, 1600, 1550, 1496
+], [], [1400, 2200]);
+
