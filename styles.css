@@ -1045,6 +1045,305 @@ body {
   font-weight: 700;
 }
 
+/* ── ETAPPE CARDS ── */
+.etappe-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--gold);
+  padding: 32px 36px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.etappe-card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.etappe-card-day {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.12);
+  padding: 6px 14px;
+  border-radius: 2px;
+}
+
+.etappe-card-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--stone-light);
+}
+
+.etappe-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.etappe-card-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.etappe-card-stats span {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--cream-dark);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 5px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+
+.etappe-card-warning {
+  background: linear-gradient(135deg, rgba(184, 92, 56, 0.15), rgba(184, 92, 56, 0.05));
+  border: 1px solid rgba(184, 92, 56, 0.3);
+  border-left: 3px solid var(--rust);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--cream-dark);
+  line-height: 1.5;
+}
+
+.etappe-card-highlight {
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(201, 168, 76, 0.05));
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-left: 3px solid var(--gold);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--cream-dark);
+  line-height: 1.5;
+}
+
+.etappe-card-body {
+  font-size: 15px;
+  color: var(--cream-dark);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.etappe-card-overnight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(74, 103, 65, 0.1);
+  border: 1px solid rgba(74, 103, 65, 0.25);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--cream-dark);
+  margin-bottom: 24px;
+}
+
+.overnight-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Startpunt note */
+.startpunt-note {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(168, 197, 204, 0.1), rgba(168, 197, 204, 0.03));
+  border: 1px solid rgba(168, 197, 204, 0.25);
+  border-left: 4px solid var(--ice);
+  border-radius: 4px;
+}
+
+.startpunt-note-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.startpunt-note-content {
+  flex: 1;
+}
+
+.startpunt-note-content strong {
+  font-size: 15px;
+  color: var(--ice);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.startpunt-note-content p {
+  font-size: 14px;
+  color: var(--cream-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Etappe photos */
+.etappe-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.etappe-photo-slot {
+  aspect-ratio: 16/10;
+  background: var(--stone-mid);
+  border: 1px dashed rgba(201, 168, 76, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.etappe-photo-slot:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+}
+
+.photo-placeholder-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--stone-light);
+  text-align: center;
+  padding: 12px;
+  opacity: 0.6;
+}
+
+/* ── HUT CARDS ── */
+.hut-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 4px solid var(--green-alpine);
+  padding: 24px 28px;
+  margin-bottom: 48px;
+}
+
+.hut-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.hut-card-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.hut-card-header>div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.hut-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cream);
+  margin: 0 0 4px 0;
+}
+
+.hut-card-detail {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--stone-light);
+  margin: 0;
+}
+
+.hut-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.hut-photo-slot {
+  aspect-ratio: 4/3;
+  background: var(--stone-mid);
+  border: 1px dashed rgba(74, 103, 65, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.hut-photo-slot:hover {
+  border-color: rgba(74, 103, 65, 0.5);
+}
+
+/* ── HIGHLIGHT DAY ── */
+.day-block.highlight-day {
+  border-top: 2px solid var(--gold);
+  background: rgba(201, 168, 76, 0.04);
+}
+
+.day-block.highlight-day .day-type {
+  color: var(--gold);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .etappe-card {
+    padding: 24px 20px;
+  }
+
+  .etappe-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .hut-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .hut-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .etappe-card-stats {
+    gap: 10px;
+  }
+
+  .startpunt-note {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .days-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .etappe-card-title {
+    font-size: 20px;
+  }
+
+  .hut-card-name {
+    font-size: 17px;
+  }
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
